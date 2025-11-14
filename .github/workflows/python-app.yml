@@ -23,7 +23,7 @@ jobs:
 
       - name: linter
         run: |
-          flake8 src 
+          flake8 . 
 
       - name: nosetest
         run: |
