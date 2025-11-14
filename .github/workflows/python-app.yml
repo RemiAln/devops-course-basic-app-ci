@@ -27,7 +27,7 @@ jobs:
 
       - name: nosetest
         run: |
-          nosetest
+          nosetests
           
       
     
