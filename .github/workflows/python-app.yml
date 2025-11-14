@@ -10,7 +10,7 @@ jobs:
     steps:
       
       - name: Set up Python 3.9
-        uses: actions/setup-python@V5
+        uses: actions/setup-python@V3
         with:
           python-version: '3.9'
         
@@ -19,5 +19,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install flake8 nose
+
+      - name: linter
+        run: |
+          flake8 .
+          
       
     
