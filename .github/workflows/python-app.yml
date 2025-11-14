@@ -24,6 +24,10 @@ jobs:
       - name: linter
         run: |
           flake8 .
+
+      - name: nosetest
+        run: |
+          nosetest
           
       
     
